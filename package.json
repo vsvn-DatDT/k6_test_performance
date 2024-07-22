@@ -1,0 +1,20 @@
+{
+    "name": "K6_Verigen_Test_Performance",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+      "test": "dotenv -e .env k6 run scenarios/access_scenario.js",
+      "access_test:concurrency": "dotenv -e .env k6 run scenarios/access_test/concurrency_test.js",
+      "dump-user:make": "dotenv -e .env node prepare/make_dump_user.js",
+      "dump-user:delete": "dotenv -e .env node prepare/delete_dump_user.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "dotenv-cli": "^7.4.2",
+      "dotenv": "^16.4.5"
+    },
+    "devDependencies": {
+    }
+  }
+  
